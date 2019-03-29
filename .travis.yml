@@ -26,8 +26,11 @@ install:
 # 执行清缓存，生成网页操作
 script:
   - hexo clean
+  - echo "开始执行"
+  - yuque-hexo clean
+  - echo "语雀缓存清除完成"
+  - yuque-hexo sync
   - hexo generate
-
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
   - git config user.name "Murphy-Yi"
