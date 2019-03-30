@@ -31,7 +31,7 @@
     "adapter": "hexo",
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "zhangyi-ul3zj",
+    "login": "murphyyi",
     "repo": "blog",
     "mdNameFormat": "title",
     "postPath": "source/_posts"
