@@ -2,9 +2,9 @@
 
 menu:
   主页: /
-  # 随笔: /tags/随笔/
+  学习: /tags/learn/
   # 简历: http://murphyyi.jios.org:10000
-  语雀: https://www.yuque.com/zhangyi-ul3zj/blog/
+  #语雀: https://www.yuque.com/zhangyi-ul3zj/blog/
   归档: /archives/
   个人主页: https://www.murphyyi.com
 # SubNav
@@ -130,8 +130,8 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  # 友情链接1: "#"
-  # 友情链接2: "#"
+   墙快: "http://wallquick.vip"
+   墨菲主页: "https://www.murphyyi.com"
   # 友情链接3: "#"
   # 友情链接4: "#"
   # 友情链接5: "#"
