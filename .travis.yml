@@ -33,8 +33,6 @@ script:
   - hexo generate
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
-  - openssl aes-256-cbc -K $encrypted_fec2598064e7_key -iv $encrypted_fec2598064e7_iv
-  -in id_rsa.enc -out id_rsa -d
   - git config user.name "Murphy-Yi"
   - git config user.email "zy84338719@hotmail.com"
   # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
