@@ -108,4 +108,4 @@ plugin:
 feed:
 type: atom
 path: atom.xml
-limit: 20
+limit: 10
