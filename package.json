@@ -15,7 +15,8 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^0.3.3",
+     "yuque-hexo": "^1.6.2"
   },
   "scripts": {
     "clean": "hexo clean",
@@ -35,5 +36,8 @@
     "repo": "blog",
     "mdNameFormat": "title",
     "postPath": "source/_posts"
+  }
+  "devDependencies": {
+    "yuque-hexo": "^1.6.2"
   }
 }
