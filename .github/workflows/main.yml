@@ -23,7 +23,7 @@ jobs:
           git config --global user.email "zy84338719@hotmail.com"
           git config --global user.name "MurphyYi"
           yarn sync
-          hexo generate
+          yarn build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

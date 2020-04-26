@@ -25,7 +25,8 @@
     "publish": "npm run clean && npm run deploy",
     "dev": "hexo s",
     "sync": "YUQUE_TOKEN=YUQUE_TOKEN_INFO yuque-hexo sync",
-    "reset": "npm run clean:yuque && npm run sync"
+    "reset": "npm run clean:yuque && npm run sync",
+    "build": "hexo generate"
   },
   "yuqueConfig": {
     "postPath": "source/_posts/yuque",
