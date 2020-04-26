@@ -26,6 +26,6 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACCESS_TOKEN }}
           external_repository: zy84338719/blog
-          publish_branch: dev
+          publish_branch: master
           publish_dir: ./public
           commit_message: auto deploy
