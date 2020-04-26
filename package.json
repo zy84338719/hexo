@@ -31,7 +31,7 @@
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "murphyyi",
     "repo": "blog"
-  }
+  },
   "devDependencies": {
     "yuque-hexo": "^1.6.0"
   }
