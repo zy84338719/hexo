@@ -1,0 +1,32 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm i -g hexo 
+          npm install hexo-deployer-git --save
+          npm install -g yuque-hexo
+          npm install hexo-generator-json-content --save
+          hexo clean
+          echo "开始执行"
+          yuque-hexo clean
+          echo "语雀缓存清除完成"
+          yuque-hexo sync
+          sed -i "s/gh_token/${{ secrets.ACCESS_TOKEN }}/g" ./_config.yml
+          mv ./public $GITHUB_WORKSPACE
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy. 
+          BUILD_SCRIPT: hexo generate
