@@ -18,4 +18,8 @@ jobs:
           echo "语雀缓存清除完成"
           sed -i "s/YUQUE_TOKEN_INFO/${{ secrets.YUQUE_TOKEN_INFO }}/g" ./package.json
           sed -i "s/gh_token/${{ secrets.ACCESS_TOKEN }}/g" ./_config.yml
+      - name: Upload page
+        run: |
+          git config --global user.email "zy84338719@hotmail.com"
+          git config --global user.name "MurphyYi"
           yarn deploy
