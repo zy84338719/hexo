@@ -20,8 +20,6 @@ jobs:
           sed -i "s/gh_token/${{ secrets.ACCESS_TOKEN }}/g" ./_config.yml
       - name: Build page
         run: |
-          git config --global user.email "zy84338719@hotmail.com"
-          git config --global user.name "MurphyYi"
           yarn sync
           yarn build
       - name: Deploy
