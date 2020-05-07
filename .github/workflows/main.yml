@@ -14,7 +14,7 @@ jobs:
           yarn clean 
           echo "语雀缓存清除完成"
           sed -i "s/YUQUE_TOKEN_INFO/${{ secrets.YUQUE_TOKEN_INFO }}/g" ./package.json
-          sed -i 's/ACCESSTOKEN/${{ secrets.ACCESS_TOKEN }}/g' ./_config.yml
+          sed -i '/https:\/\//a ${{ secrets.ACCESS_TOKEN }}' ./_config.yml
       - name: Build page
         run: |
           yarn sync
