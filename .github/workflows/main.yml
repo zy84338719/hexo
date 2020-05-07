@@ -11,10 +11,10 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           yarn
-          yarn clean 
+          yarn clean
           echo "语雀缓存清除完成"
           sed -i "s/YUQUE_TOKEN_INFO/${{ secrets.YUQUE_TOKEN_INFO }}/g" ./package.json
-          sed -i '/https:\/\//a ${{ secrets.ACCESS_TOKEN }}' ./_config.yml
+#          sed -i 's/ACCESSTOKEN/${{ secrets.ACCESS_TOKEN }}/' ./_config.yml
       - name: Build page
         run: |
           yarn sync
