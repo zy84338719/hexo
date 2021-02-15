@@ -41,7 +41,14 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -102,10 +109,10 @@ jsonContent:
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 #RSS订阅
-plugin:
-- hexo-generator-feed
-#Feed Atom
-feed:
-type: atom
-path: atom.xml
-limit: 10
+# plugin:
+# - hexo-generator-feed
+# #Feed Atom
+# feed:
+# type: atom
+# path: atom.xml
+# limit: 10
