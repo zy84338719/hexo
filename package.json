@@ -26,7 +26,7 @@
     "dev": "hexo s",
     "sync": "YUQUE_TOKEN=YUQUE_TOKEN_INFO yuque-hexo sync",
     "reset": "npm run clean:yuque && npm run sync",
-    "build": "hexo generate"
+    "build": "hexo generate && echo 'blog.murphyyi.com' > ./public/CNAME"
   },
   "yuqueConfig": {
     "postPath": "source/_posts/yuque",
