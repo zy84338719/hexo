@@ -2,11 +2,12 @@
 
 menu:
   主页: /
-  学习: /tags/learn/
+  # 学习: /tags/learn/
   # 简历: http://murphyyi.jios.org:10000
-  #语雀: https://www.yuque.com/zhangyi-ul3zj/blog/
   归档: /archives/
-  个人主页: https://www.murphyyi.com
+  个人主页: https://cv.murphyyi.com
+  语雀: https://www.yuque.com/murphyyi/blog/
+  导航: https://ework.murphyyi.com
 # SubNav
 subnav:
   github: "https://github.com/zy84338719"
@@ -40,7 +41,7 @@ excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: false
+mathjax: true
 # 是否在新窗口打开链接
 open_in_new: false
 
