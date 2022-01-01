@@ -27,7 +27,7 @@
     "dev": "hexo s",
     "sync": "YUQUE_TOKEN=YUQUE_TOKEN_INFO yuque-hexo sync",
     "reset": "npm run clean:yuque && npm run sync",
-    "build": "hexo generate && echo 'blog.murphyyi.com' > ./public/CNAME"
+    "build": "hexo generate && echo 'old.blog.murphyyi.com' > ./public/CNAME"
   },
   "yuqueConfig": {
     "postPath": "source/_posts/yuque",
@@ -36,9 +36,12 @@
     "login": "murphyyi",
     "repo": "blog",
     "onlyPublished": true,
-    "onlyPublic": true
+    "onlyPublic": true,
+    "mdNameFormat": "title",
+    "adapter": "hexo",
+    "lastGeneratePath": "./yuque-timestamp.txt"
   },
   "devDependencies": {
-    "yuque-hexo": "^1.6.5"
+    "yuque-hexo": "^1.7.0"
   }
 }
