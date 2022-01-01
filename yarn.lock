@@ -3542,10 +3542,10 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-yuque-hexo@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/yuque-hexo/-/yuque-hexo-1.7.0.tgz#012f70f0f83a9383a87fa6ce45be90ee9128f8e5"
-  integrity sha512-jTcDqRTN9IM62BTVvucntbJnUaWjzbnKm1Mr1LvSF8nLJQxVv5VKpQwoOIbl4IsY9W+qLRfftZ6tZGLXb2t9Kg==
+yuque-hexo@1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/yuque-hexo/-/yuque-hexo-1.6.5.tgz#add21d0376ac417c6c74ca66e68c45e32cdb868a"
+  integrity sha512-YsNUaA2kQlyMh7cNJ8Vs8BYRlAJ1x6ILrqAqVRMTqgBtvCf0KSIjHP+JSRe4CVKFwdaq2oyOgClXu9Y+jzVDiw==
   dependencies:
     "@yuque/sdk" "^1.1.1"
     chalk "^2.4.1"

@@ -42,6 +42,6 @@
     "lastGeneratePath": "./yuque-timestamp.txt"
   },
   "devDependencies": {
-    "yuque-hexo": "^1.7.0"
+    "yuque-hexo": "1.6.5"
   }
 }
