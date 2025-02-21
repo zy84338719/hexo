@@ -16,7 +16,7 @@ jobs:
           sed -i "s/YUQUE_TOKEN_INFO/${{ secrets.YUQUE_TOKEN_INFO }}/g" ./package.json
           git config --global user.email "zy84338719@hotmail.com"
           git config --global user.name "zy84338719"
-#          sed -i 's/ACCESSTOKEN/${{ secrets.ACCESS_TOKEN }}/' ./_config.yml
+#          sed -i 's/ACCESSTOKEN/${{ secrets.ACCESS_TOKEN }}/' ./_config.yml 
       - name: Build page
         run: |
           yarn sync
